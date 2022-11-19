@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <title>SOY LA WEB</title>            
+    </head>
+        <body>
+            <h1>TITULO 1</h1>
+            <h2>TITULO 2</h2>
+            <h3>TITULO 3</h3>
+            <h4>TITULO 4</h4>
+            <h5>TITULO 5</h5>
+            <h6>TITULO 6</h6>
+            <hr />
+            <br />
+            <br />
+
+            <p>Esto es un pagrafo donde por ej. podemos darle <b>importancia</b> a parte del texto, otra forma en la que se puede <i>destacar</i>. 
+                Tambien podemmos poner formulas como E=MC<sup>2</sup> o el agua es H<sub>2</sub>O</p>
+                <br />
+            <p><strong>Este texto es fuerte destacan con el tag strong</strong></p>
+            <p><em>Este es el modo EM interesante para darle enfasi a algo</em></p>
+            <hr />
+            <p> <q>Podria ser ironico por las comillas</q></p>
+
+            <blockquote cite="http://en.wikipedia.org/wiki/Winnie-the-Pooh">
+                <p> Blockquote se usa para citaciones de una determinada largueza</p>
+            </blockquote>
+            <p><abbr title="Señor">Sr.</abbr> Martin Rodriguez Passerini</p>
+            <p> Una de mis peliculas preferidas es <cite>Lord Of The Ring </cite> </p>
+            <p><dfn>Cuando utilizamos un nuevo termino </dfn></p>
+            <p> Mi direccion de correo electronico es <address>m.rodriguezpasserini@gmail.com</address></p>
+            <p> Hoy ha sido mi <del>peor</del> <ins>mejor</ins> dia de la semana "viernes" </p>
+            <p>Si compras hoy te tachamos el precio <s>€500</s> Estamos en oferta €350</p>
+            <br />
+            <hr />
+
+            <ol>
+                <li>pan</li>
+                <li>leche</li>
+                <li>huevos</li>
+                <li>cafe</li>                
+            </ol>
+            <ul>
+                <li>Argentina</li>
+                <li>Francia</li>
+                <li>Brasil</li>
+                <li>Alemania</li>
+            </ul>
+            <ul>
+                <li>Menu</li>
+                    <ul>
+                        <li>Entrante</li>
+                        <li>Primer plato</li>
+                        <li>Segundo Plato</li>
+                        <li>Postre o cafe</li>
+                    </ul>
+            </ul>
+
+            <dl>
+                <dt><ins>Mundial Catar:</ins></dt><br />
+                <dd>Una de las caracteristicas de este mundial es que por 
+                    las altas temperaturas se juega en el mes de noviembre
+                </dd><br />
+
+                <dt><ins>Favoritos del mundial:</ins></dt><br />
+                <dd>Siempre estan las selecciones con mas trayectoria
+                    y de muy buena actualidad
+                </dd>
+                <dd>Pero tambien en casi todos los mundiales hay algun equipo que sorpresa</dd>
+
+            
+            </dl>
+
+            <p>Buscadores</p>
+            <ul>
+                <li><a href="http://www.google.com" target="_blank">Google</a></li>
+                <li><a href="http://www.yahoo.com" target="_blank">Yahoo</a></li>
+                <li><a href="http://www.bing.com" target="_blank">Bing</a></li>
+            </ul>
+
+            <a href="mailto:m.rodriguezpasserini@gmail.com">Email de Martin Rodriguez Passerini</a>
+
+            <br />
+            <br />
+            <br />
+            <hr />
+            
+            <p><img src="imagenes/estadios_qatar_2022.jpg" alt="Estadios Mundial Qatar 2022" title="Algunos de los estadios del mundial" width="100" height="75" align=left />
+            Estos son algunos de los estadios del mundial de Qatar. <br /> Como veran en las imagnes en su mayorias son nuevos para este nuevo grandioso envento</p>
+
+            <br />
+            <br />
+            <br />
+            <br />
+
+
+
+            <figure>
+            <img src="imagenes/estadios_qatar_2022.jpg" alt="Estadios Mundial Qatar 2022" title="Algunos de los estadios del mundial" width="510" height="280" />
+            <br />
+            <figcaption>Algunos de los estadios del mundial de Qatar. Como se aprecia en la imagenen.</figcaption>
+                
+            </figure>
+
+            <hr />
+
+            <table width="400" cellpadding="10" cellspacing="5" border="2">
+                <tr>
+                    <th width="150" bgcolor="#efefef"></th>
+                    <th>9am</th>
+                    <th>10am</th>
+                    <th>11am</th>
+                    <th>12am</th>
+                </tr>
+
+                <tr>
+                    <th>Lunes</th>
+                    <td colspan="3">Estudio</td>
+                    <td>Almuerzo</td>
+                </tr>
+
+                <tr>
+                <th>Martes</th>
+                <td colspan="2">Trabajo</td>
+                <td>Estudio</td>
+                <td>Almuerzo</td>
+                </tr>
+            </table>
+
+            <br />
+            <br />
+            <br />
+            <p> Como utilizamos "colspan" podemos tambien utilizar "rowspan" </p>
+
+
+
+            <table  bgcolor="#efefef">
+                <thead>
+                    <tr>    
+                    <th colspan="1">OS</th>
+                    <th colspan="1">Last Version</th>
+                    <th colspan="1">Precio</th>
+                    </tr>
+                </thead>
+
+                
+                <tbody>
+                    <tr>
+                        <th>Windows</th>
+                        <td>11</td>
+                        <td>€150</td>
+                    </tr>
+
+                    <tr>
+                        <Th>MacOS Monterey</Th>
+                        <td>12.6.1</td>
+                        <td>Gratis</td>
+                    </tr>
+
+                    <tr>
+                        <th>Linux Mint </th>
+                        <td>21.0</td>
+                        <td>Gratis</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <hr />
+
+            <form action="http://www.webproject.com/subscribe.php"method="get">
+                <p>Username:</p>
+                    <input type="text"name="username"size="15"maxlength="30"/>
+                <p>Password:</p>
+                    <input type="password" name="password"size="15"maxlength="30"/>
+                
+                <p>Que piensas de nuestro servicio:</p>
+                    <textarea name="comentarios" cols="30" rows="5">Introduzca su comentario</textarea>
+                <br />
+
+                <p> Por favor seleciona tu genero de musica favorita:<br />
+                    <input type="radio" name="genero" value="rock" checked="chequeado"/> Rock
+                    <input type="radio" name="genero" value="pop" checked="chequeado"/> Pop
+                    <input type="radio" name="genero" value="jazz" checked="chequeado"/> Jazz 
+
+                </p>
+            </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                
+               
+
+                
+
+
+
+
+
+
+
+        </body>
+</html>
