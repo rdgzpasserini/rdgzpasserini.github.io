@@ -1,330 +1,449 @@
 <!DOCTYPE html>
-<html lang="en" class="fsvs">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Martin Rodriguez Passerini</title>
-
-		<!--CSS-->
-		<link rel="stylesheet" href="css/fsvs.css">
-		<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:300,400,500,600,700" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/chocolat.css">
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		
-		
-	 
-	</head>
-	<body>
-		<nav class="navigation">
-			<ul>
-				<li><a href="#slide-1">Acerca de</a></li>
-				<li><a href="#slide-2">Experiencia</a></li>
-				<li><a href="#slide-3">Educación</a></li>
-				<li><a href="#slide-4">Skills</a></li>
-				<li><a href="#slide-5">Contacto</a></li>
-			</ul>
-		</nav>
-		
-		<div id="fsvs-body" class="site-wrapper">
-			
-			<div class="slide">
-			 	<div class="slide-wrapper">
-				 	<div class="slide-wrapper-inner">
-										
-						<img src="images/foto4.jpg" width="200" class="logo rounded-circle mb-4">
-													
-						<h1>Martín Rodríguez Passerini</h1>
-						<p class="subtitle mt-3"> Web developer
-													
-						<p class="lead">Me desempeño en el área de producto para el programa de Fidelización de Air Europa. Mi enfoque se centra en la migración del CRM, especialmente en la creación y optimización de plantillas utilizando HTML y CSS. </p>
+<html lang="es" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer | Data Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Funcion para cambiar de claro a oscuro -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+      							// Obtener el tema guardado o establecer "light" por defecto
+      							const theme = localStorage.getItem("theme") || "light";
+      							document.documentElement.setAttribute("data-bs-theme", theme);
+      						});
+      					
+      						function toggleTheme() {
+      							const currentTheme = document.documentElement.getAttribute("data-bs-theme");
+      							const newTheme = currentTheme === "light" ? "dark" : "light";
+      							document.documentElement.setAttribute("data-bs-theme", newTheme);
+      							localStorage.setItem("theme", newTheme);
+      						}
+      			
+      
+    </script>
+    <!--Bloquea la opcion de seleccionar elementos desde la web-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+      							// Bloquear la selección de texto
+      							document.body.onselectstart = function () { return false; };
+      			
+      							// Bloquear el clic derecho
+      							document.addEventListener("contextmenu", function (event) {
+      								event.preventDefault();
+      							});
+      			
+      							// Bloquear el arrastre de imágenes
+      							document.querySelectorAll("img").forEach(img => {
+      								img.ondragstart = function () { return false; };
+      							});
+      						});
+      			
+      
+    </script>
+  </head>
+  <body>
+    <!--Header-->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+          <!-- Imagen arriba en móviles -->
+          <div class="row d-md-none mb-3 mt-5 pt-4">
+            
+            <div class="col-12 text-center"> <img src="foto_cv.jpeg" class="rounded" alt="Foto" style="width: 100px; height: auto;"> </div>
+          </div>
+          <!-- Navbar: solo móviles -->
+          <nav class="navbar bg-body-tertiary d-block d-md-none position-fixed top-0 start-50 translate-middle-x w-100" style="z-index: 998;">
+            <div class="container-fluid"> <a class="navbar-brand text-center w-100" href="https://rdgzpasserini.github.io/">rdgzpasserini</a> </div>
+          </nav>
+          <!-- Botón: fijo arriba a la izquierda en móviles --><button class="btn btn-sm p-2 fs-6 d-block d-md-none position-fixed top-0 start-0 m-2 mb-5" onclick="toggleTheme()" style="z-index: 999;">
+						<i class="bi bi-circle-half"></i> 	
+					</button>
+          <!-- Botón: fijo arriba a la derecha en móviles --><button class="btn btn-sm p-2 fs-6 d-flex align-items-center d-block d-md-none position-fixed top-0 end-0 m-2" onclick="toggleLang()" style="z-index: 999;">
+						<span class="me-2 lang-text">ES</span>
+						<i class="bi bi-translate"></i>
+					</button>
+          <div class="d-flex justify-content-between align-items-center mt-1 mb-5 d-none d-md-flex"> <button class="btn btn-sm p-2 fs-4" onclick="toggleTheme()">
+						<i class="bi bi-circle-half"></i> 	
+					</button>
+            <div class="d-flex align-items-center">
+              <p class="mb-0 me-2 lang-text">ES</p> <button class="btn btn-sm p-2 fs-4" onclick="toggleLang()">
+						<i class="bi bi-translate"></i> 	
+						</button> </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 text-center text-md-start">
+              <h3 data-translate="name"></h3>
+              <p class="mb-0 fuente" data-translate="job"></p>
+              <p class="mb-0 fuente" data-translate="location"></p>
+              <div class="d-flex justify-content-center justify-content-md-start mt-2"> <a href="mailto:m.rodriguezpasserini@gmail.com" title="Gmail" target="_blank" class="text-reset"><i class="bi bi-envelope fs-4 me-2"></i></a> <a href="https://www.linkedin.com/in/rdgzpasserini" target="_blank" class="text-reset"><i class="bi bi-linkedin fs-4 me-2"></i></a> <a href="https://github.com/rdgzpasserini" title="Github" target="_blank" class="text-reset"><i class="bi bi-github fs-4 me-2"></i></a> </div>
+            </div>
+            <div class="col-12 col-md-6 d-none d-md-flex justify-content-md-end"> <img src="foto_cv.jpeg" class="rounded" alt="Foto" style="width: 150px; height: auto;"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <div class="container mt-5 d-none d-md-block">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+          <h5 data-translate="about_title"></h5>
+          <p class="fuente" data-translate="about_text"></p>
+        </div>
+      </div>
+    </div>
+    <!-- Experience -->
+    <div class="container mt-5 d-none d-md-block">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+          <h5 data-translate="experience_title"></h5>
+          <div class="d-flex justify-content-between flex-column flex-md-row">
+            <h6 class="mb-1" data-translate="air_europa"></h6> <span class="text-muted fuente" data-translate="experience_date"></span> </div> <span class="fw-bold font-monospace" data-translate="loyalty_program"></span>
+          <p class="fuente" data-translate="loyalty_program_desc"></p>
+        </div>
+      </div>
+    </div>
+    <!-- Education -->
+    <div class="container mt-5 d-none d-md-block">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+          <h5 data-translate="education_title"></h5>
+          <div class="d-flex justify-content-between flex-column flex-md-row">
+            <h6 class="mb-1"></h6> <span class="text-muted fuente"></span> </div> <span class="fw-bold font-monospace" data-translate="education_degree"></span>
+          <p class="fuente" data-translate="education_desc"></p>
+        </div>
+      </div>
+    </div>
+	<!---->
 	
+
+	<!---->
+
+	<div class="d-none d-md-block">
+		<!--Skills-->
+		<div class="container mt-5 mb-1">
+		  <div class="row justify-content-center">
+			<div class="col-12 col-md-10">
+			  <h5>Skills</h5>
+			  <div class="d-flex flex-wrap gap-2"> <span class="badge badge-custom font-monospace">HTML5</span> <span class="badge badge-custom font-monospace">CSS</span> <span class="badge badge-custom font-monospace">Bootstrap</span> <span class="badge badge-custom font-monospace">JavaScript</span> <span class="badge badge-custom font-monospace">JQuery</span> <span class="badge badge-custom font-monospace">PHP</span> <span class="badge badge-custom font-monospace">Java</span> <span class="badge badge-custom font-monospace">MySQL</span> <span class="badge badge-custom font-monospace">OracleDB</span> <span class="badge badge-custom font-monospace">Apache</span> <span class="badge badge-custom font-monospace">Tomcat</span> <span class="badge badge-custom font-monospace">Git</span> <span class="badge badge-custom font-monospace">C#</span> <span class="badge badge-custom font-monospace"></span> </div>
+			</div>
+		  </div>
+		</div>
+		<!-- Contenedor de Cursos -->
+		<div class="container mt-5 mb-5 desktop-courses">
+		  <div class="row justify-content-center">
+			<div class="col-12 col-md-10">
+			  <h5 data-translate="courses_title"></h5>
+			  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+				<!-- Card 1 -->
+				<div class="col">
+				  <div class="card text-bg-light h-100">
+					<div class="card-body d-flex flex-column">
+					  <h5 class="card-title fs-6 font-monospace fw-bold"></h5>
+					  <p class="card-text font-monospace"></p>
+					  <p class="card-text font-monospace"></p>
+					  <div class="mt-auto d-flex justify-content-end"> <i class="bi bi-filetype-js fs-3 me-2"></i> </div>
 					</div>
+				  </div>
 				</div>
-			</div><!--/ .slide-->
-			
-			<div class="slide">
-			 	<div class="slide-wrapper">
-				 	<div class="slide-wrapper-inner">
-						<h2>Experiencia</h2>
-						
-						<div class="item">
-							<div class="row">
-								<div class="col-sm-12 col-md-3 text-left border-right pr-4">
-									<div class="date">2023-Actualidad</div>
-									<h3>Air Europa</h3>
-									<p class="subtitle">Loyalty Program Operations Analyst</p>
-								</div>
-
-								<div class="col text-left mt-md-3">
-									<p class="pl-md-2 item-description">Desarrollo y optimización de plantillas en HTML/CSS. Integración precisa con la lógica del sistema y variables predefinidas en la migración del CRM. Generación de informes de rendimiento utilizando OBIEE y Qlik. Gestión de incidencias a través de metodologías ágiles. </p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="item">
-							<div class="row">
-								<div class="col-sm-12 col-md-3 text-left border-right pr-4">
-									<div class="date">2017-2023</div>
-									<h3>Globalia</h3>
-									<p class="subtitle">Senior Customer Service Advisor</p>
-								</div>
-
-								<div class="col text-left mt-md-3">
-									<p class="pl-md-2 item-description">Gestión de reservas a través del sistema Amadeus. Recepción, registro y resolución de incidencias a través de Jira. Asesoramiento a clientes del programa de fidelización. Resolución incidencias a través el sistema CRM. </p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="item">
-							<div class="row">
-								<div class="col-sm-12 col-md-3 text-left border-right pr-4">
-									<div class="date">2010-2015</div>
-									<h3>Marc Jacobs</h3>
-									<p class="subtitle">Store Assistant Manager</p>
-								</div>
-
-								<div class="col text-left mt-md-3">
-									<p class="pl-md-2 item-description">Capacidad de liderazgo y resolución de conflictos. Elaboración y reporte del análisis KPI. Responsabilidad e implicación con los objetivos de la empresa.  </p>
-								</div>
-							</div>
-						</div>
-						
-						
+				<!-- Card 2 -->
+				<div class="col">
+				  <div class="card text-bg-light h-100">
+					<div class="card-body d-flex flex-column">
+					  <h5 class="card-title fs-6 font-monospace fw-bold"></h5>
+					  <p class="card-text font-monospace"></p>
+					  <p class="card-text font-monospace"></p>
+					  <div class="mt-auto d-flex justify-content-end"> <i class="bi bi-filetype-js fs-3 me-2"></i> </div>
 					</div>
+				  </div>
 				</div>
-			</div><!--/ .slide-->
-			
-			
-			<div class="slide">
-			 	<div class="slide-wrapper">
-				 	<div class="slide-wrapper-inner">
-						<h2>Educación</h2>
-						
-						<div class="item">
-							<div class="row">
-								<div class="col-sm-12 col-md-3 text-left border-right pr-4">
-									<div class="date">2023-Actualidad</div>
-									<h3>Ilerna Online</h3>
-									<p class="subtitle">Desarrollo de Aplicaciones Web</p>
-								</div>
-
-								<div class="col text-left mt-md-3">
-									<p class="pl-md-2 item-description">Sumergido en la informática: He completado los módulos de Sistemas, Programación, Bases de datos, Lenguajes de marcas y Entornos de desarrollo. ¡Ahora explorando despliegue de aplicaciones y desarrollo web entorno servidor! </p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="item">
-							<div class="row">
-								<div class="col-sm-12 col-md-3 text-left border-right pr-4">
-									<div class="date">2014-2015</div>
-									<h3>Europa Networking</h3>
-									<p class="subtitle">Certificación CCNA</p>
-								</div>
-
-								<div class="col text-left mt-md-3">
-									<p class="pl-md-2 item-description">Especializado en configuración y administración de redes, resolución de problemas en entornos de red, conocimiento de protocolos de enrutamiento y conmutación, gestión de redes inalámbricas y implementación de soluciones de red escalables. </p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="item">
-							<div class="row">
-								<div class="col-sm-12 col-md-3 text-left border-right pr-4">
-									<div class="date">2002-2003</div>
-									<h3>Academia ISF</h3>
-									<p class="subtitle">Sistemas Micro informaticos</p>
-								</div>
-
-								<div class="col text-left mt-md-3">
-									<p class="pl-md-2 item-description">Experiencia sólida en el ensamblaje y mantenimiento de equipos, implementación de sistemas operativos individuales, habilidades avanzadas en aplicaciones ofimáticas, gestión eficiente de sistemas en red y configuración de redes locales.  </p>
-								</div>
-							</div>
-						</div>
-
+				<!-- Card 3 -->
+				<div class="col">
+				  <div class="card text-bg-light h-100">
+					<div class="card-body d-flex flex-column">
+					  <h5 class="card-title fs-6 font-monospace fw-bold"></h5>
+					  <p class="card-text font-monospace"></p>
+					  <p class="card-text font-monospace"></p>
+					  <div class="mt-auto d-flex justify-content-end"> <i class="bi bi-filetype-js fs-3 me-2"></i> </div>
 					</div>
+				  </div>
 				</div>
-			</div><!--/ .slide-->
-			
-			<div class="slide">
-			 	<div class="slide-wrapper">
-				 	<div class="slide-wrapper-inner">
-						<h2>Skills</h2>
-						
-						<!--Gallery-->
-						<div class="row gallery chocolat-parent" data-chocolat-title="Portfolio">
-							
-							<!--Gallery Item-->
-							<div class="col-sm-6 col-md-4 col-gallery	" data-category="1" data-sort="value">
-								<figcaption>
-									<div class="parent">
-										<img src="images/viajeropriority.jpg" class="img-fluid">
-										 <div class="child ">
-											<h3>Viajero Priority</h3>
-											<p>javaScript - HTML - CSS</p>
-											<a href= "https://www.viajeropriority.com/" target="_blank" class="btn chocolat-image" title="Enter your image caption here">viajeropriority.com</a>
-										</div>
-									</div>
-								</figcaption>
-							</div>
-							
-							<!--Gallery Item-->
-							<div class="col-6 col-md-4 col-gallery">
-								<figcaption>
-									<div class="parent">
-										<img src="images/csharp.jpg" class="img-fluid">
-										 <div class="child ">
-											<h3>Programación Modular</h3>
-											<p>C#</p>
-											<a href="https://github.com/rdgzpasserini/millasAireuropa" target="_blank" class="btn chocolat-image" title="Enter your image caption here">Github</a>
-										</div>
-									</div>
-								</figcaption>
-							</div>
-							
-							<!--Gallery Item-->
-							<div class="col-6 col-md-4 col-gallery">
-								<figcaption>
-									<div class="parent">
-										<img src="images/upcomingmovies.jpg" class="img-fluid">
-										 <div class="child ">
-											<h3>RESTful API Consumer</h3>
-											<p>JavaScript</p>
-											<a href="https://rdgzpasserini.github.io/upcomingMovies/" target="_blank" class="btn chocolat-image" title="Enter your image caption here">Github</a>
-										</div>
-									</div>
-								</figcaption>
-							</div>
-							
-							<!--Gallery Item-->
-							<div class="col-sm-6 col-md-4 col-gallery">
-								<figcaption>
-									<div class="parent">
-										<img src="images/java.jpg" class="img-fluid">
-										 <div class="child ">
-											<h3>Programación Orientada a Objetos</h3>
-											<p>Java</p>
-											<a href="https://github.com/rdgzpasserini/gestionCuentaPersonal/" target="_blank" class="btn chocolat-image" title="Enter your image caption here">Github</a>
-										</div>
-									</div>
-								</figcaption>
-							</div>
-							
-							<!--Gallery Item-->
-							<div class="col-6 col-md-4 col-gallery">
-								<figcaption>
-									<div class="parent">
-										<img src="images/currencyseablue.jpg" class="img-fluid">
-										 <div class="child ">
-											<h3>API REST</h3>
-											<p>JavaScript</p>
-											<a href="https://rdgzpasserini.github.io/seablueCurrency/" target="_blank" class="btn chocolat-image" title="Enter your image caption here">Github</a>
-										</div>
-									</div>
-								</figcaption>
-							</div>
-							
-							<!--Gallery Item-->
-							<div class="col-6 col-md-4 col-gallery">
-								<figcaption>
-									<div class="parent">
-										<img src="images/mysql.jpg" class="img-fluid">
-										 <div class="child ">
-											<h3>BBDD</h3>
-											<p>SQL - MySQL</p>
-											<a href="https://github.com/rdgzpasserini/Academia/" target="_blank" class="btn chocolat-image" title="Enter your image caption here">Github</a>
-										</div>
-									</div>
-								</figcaption>
-							</div>
-						</div>
-
+				<!-- Card 4 -->
+				<div class="col">
+				  <div class="card text-bg-light h-100">
+					<div class="card-body d-flex flex-column">
+					  <h5 class="card-title fs-6 font-monospace fw-bold"></h5>
+					  <p class="card-text font-monospace"></p>
+					  <p class="card-text font-monospace"></p>
+					  <div class="mt-auto d-flex justify-content-end"> <i class="bi bi-filetype-js fs-3 me-2"></i> </div>
 					</div>
+				  </div>
 				</div>
-			</div><!--/ .slide-->
-			
-			<div class="slide">
-			 	<div class="slide-wrapper">
-				 	<div class="slide-wrapper-inner">
-																							
-						<h2>Contacto</h2>
-													
-						<div class="container contact-details">
-							<div class="row">
-								<div class="col-md-7 text-left">
-									<form class="contact-form" action="test/form.php" method="post">
-										<div class="form-group">
-											<label>Nombre:</label>
-											<input type="text" class="form-control-custom" placeholder="" value="">
-										</div>
-										<div class="form-group">
-											<label>Email:</label>
-											<input type="text" class="form-control-custom" placeholder="" value="">
-										</div>
-										<div class="form-group">
-											<label>Mensaje:</label>
-											<textarea class="form-control-custom" rows="3"></textarea>
-										</div>
-										<button type="submit" class="btn pt-2 pb-2 btn-primary mt-4">Enviar</button> 
-									</form>
-								</div>
-								<div class="col-md text-right">
-									<!--<h3>Email</h3>
-									<p><a href="#">j.dornan@email.com</a></p>
-									<h3>Phone</h3>
-									<p>(123) 456 7890</p>-->
-									<h3>Ubicación</h3>
-									<p>Mallorca España</p>
-									<h3>Social Media</h3>
-									<ul class="social">
-										<li><a href="https://www.linkedin.com/in/rdgzpasserini" title="Linkedin" class="fa fa-linkedin" target="_blank"></a></li>
-										<li><a href="https://github.com/rdgzpasserini" title="Github" class="fa fa-github" target="_blank"></a></li>
-										<li><a href="mailto:m.rodriguezpasserini@gmail.com" title="Gmail" class="fa fa-google" target="_blank"></a></li>
-										<!--<li><a href="#" title="Dribbble" class="fa fa-dribbble"></a></li>
-										<li><a href="#" title="Instagram" class="fa fa-instagram"></a></li>-->
-										<div class="clear"></div>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="mt-4 pt-4">
-							Descarga mi CV <a href="/images/CvWeb.pdf" title="Descargar CV" class="fa fa-file-pdf-o" target="_blank" style="color: red;"></a>
-						</div>
-
+				<!-- Card 5 -->
+				<div class="col">
+				  <div class="card text-bg-light h-100">
+					<div class="card-body d-flex flex-column">
+					  <h5 class="card-title fs-6 font-monospace fw-bold"></h5>
+					  <p class="card-text font-monospace"></p>
+					  <p class="card-text font-monospace"></p>
+					  <div class="mt-auto d-flex justify-content-end"> <i class="bi bi-filetype-py fs-3 me-2"></i> </div>
 					</div>
+				  </div>
 				</div>
-			</div><!--/ .slide-->
-			
-		</div><!--/ .site-wrapper-->
+				<!-- Card 6 -->
+				<div class="col">
+				  <div class="card text-bg-light h-100">
+					<div class="card-body d-flex flex-column">
+					  <h5 class="card-title fs-6 font-monospace fw-bold"></h5>
+					  <p class="card-text font-monospace"></p>
+					  <p class="card-text font-monospace"></p>
+					  <div class="mt-auto d-flex justify-content-end"> <i class="bi bi-filetype-py fs-3 me-2"></i> </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
 
 
-		<!-- jQuery first, then Tether, then Bootstrap JS. -->
-		<script   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="   crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-		
-		<!--Full Screen Vertical Slider-->
-		<script type="text/javascript" src="js/fsvs.js"></script>
-		<script>
-		jQuery(document).ready(function($){
-		    var slider = $.fn.fsvs({
-		        speed               : 1200,
-		        bodyID              : 'fsvs-body',
-		        selector            : '> .slide',
-		        mouseDragEvents     : false
-		    });
-		});
-		</script>
-		
-		<!-- Chocolat -->
-		<script type="text/javascript" src="js/jquery.chocolat.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-			    $('.chocolat-parent').Chocolat();
-			});
-		</script>
-	</body>
+	<!---->
+    <!-- Accordion: solo móviles -->
+    <div class="accordion d-block d-md-none mt-5 bg-body-tertiary" id="accordionExample">
+		<!-- About -->
+		<div class="accordion-item bg-body">
+		  <h2 class="accordion-header" id="headingAbout">
+					  <button class="accordion-button collapsed bg-body text-body" type="button" data-bs-toggle="collapse" data-bs-target="#about" aria-expanded="false" aria-controls="about">
+					  <span data-translate="about_title"></span>
+					  </button>
+				  </h2>
+		  <div id="about" class="accordion-collapse collapse" aria-labelledby="headingAbout" data-bs-parent="#accordionExample">
+			<div class="accordion-body bg-body text-body">
+			  <p class="fuente" data-translate="about_text"></p>
+			</div>
+		  </div>
+		</div>
+		<!-- Experience -->
+		<div class="accordion-item bg-body">
+		  <h2 class="accordion-header" id="headingExperience">
+			  <button class="accordion-button collapsed bg-body text-body" type="button" data-bs-toggle="collapse" data-bs-target="#experience" aria-expanded="false" aria-controls="experience">
+				  <span data-translate="experience_title"></span>
+			  </button>
+			  </h2>
+		  <div id="experience" class="accordion-collapse collapse" aria-labelledby="headingExperience" data-bs-parent="#accordionExample">
+			<div class="accordion-body bg-body text-body">
+			  <div class="d-flex justify-content-between align-items-center">
+				<h6 class="mb-1" data-translate="air_europa">Air Europa</h6> <span class="text-muted fuente" data-translate="experience_date"></span> </div>
+			  <!-- Margen superior --><span class="fw-bold font-monospace mt-2 d-block badge-custom p-3 w-100" data-translate="loyalty_program"></span>
+			  <p class="fuente" data-translate="loyalty_program_desc"></p>
+			</div>
+		  </div>
+		</div>
+		<!-- Education -->
+		<div class="accordion-item bg-body">
+		  <h2 class="accordion-header" id="headingEducation">
+			  <button class="accordion-button collapsed bg-body text-body" type="button" data-bs-toggle="collapse" data-bs-target="#education" aria-expanded="false" aria-controls="education">
+				  <span data-translate="education_title"></span>
+			  </button>
+			  </h2>
+		  <div id="education" class="accordion-collapse collapse" aria-labelledby="headingEducation" data-bs-parent="#accordionExample">
+			<div class="accordion-body bg-body text-body">
+			  <div class="d-flex justify-content-between align-items-center">
+				<h6 class="mb-1"></h6> <span class="text-muted fuente"></span> </div>
+				  <span class="fw-bold font-monospace mt-2 d-block badge-custom p-3 w-100" data-translate="education_degree"></span>
+					  
+					  
+				  <p class="fuente" data-translate="education_desc"></p>
+			</div>
+		  </div>
+		</div>
+
+		<div class="d-block d-md-none">
+			<!--Skills-->
+			<div class="container mt-5 mb-1">
+			  <div class="row justify-content-center">
+				<div class="col-12 col-md-10">
+				  <h5>Skills</h5>
+				  <div class="d-flex flex-wrap gap-2"> <span class="badge badge-custom font-monospace">HTML5</span> <span class="badge badge-custom font-monospace">CSS</span> <span class="badge badge-custom font-monospace">Bootstrap</span> <span class="badge badge-custom font-monospace">JavaScript</span> <span class="badge badge-custom font-monospace">JQuery</span> <span class="badge badge-custom font-monospace">PHP</span> <span class="badge badge-custom font-monospace">Java</span> <span class="badge badge-custom font-monospace">MySQL</span> <span class="badge badge-custom font-monospace">OracleDB</span> <span class="badge badge-custom font-monospace">Apache</span> <span class="badge badge-custom font-monospace">Tomcat</span> <span class="badge badge-custom font-monospace">Git</span> <span class="badge badge-custom font-monospace">C#</span> <span class="badge badge-custom font-monospace"></span> </div>
+				</div>
+			  </div>
+			</div>
+			<!-- Contenedor de Cursos -->
+			<div class="container mt-5 mb-5 mobile-courses">
+			  <div class="row justify-content-center">
+				<div class="col-12 col-md-10">
+				  <h5 data-translate="courses_title"></h5>
+				  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+					<!-- Card 1 -->
+					<div class="col">
+					  <div class="card text-bg-light h-100">
+						<div class="card-body d-flex flex-column">
+						  <h5 class="card-title fs-6 font-monospace fw-bold"></h5>
+						  <p class="card-text font-monospace"></p>
+						  <p class="card-text font-monospace"></p>
+						  <div class="mt-auto d-flex justify-content-end"> <i class="bi bi-filetype-js fs-3 me-2"></i> </div>
+						</div>
+					  </div>
+					</div>
+					<!-- Card 2 -->
+					<div class="col">
+					  <div class="card text-bg-light h-100">
+						<div class="card-body d-flex flex-column">
+						  <h5 class="card-title fs-6 font-monospace fw-bold"></h5>
+						  <p class="card-text font-monospace"></p>
+						  <p class="card-text font-monospace"></p>
+						  <div class="mt-auto d-flex justify-content-end"> <i class="bi bi-filetype-js fs-3 me-2"></i> </div>
+						</div>
+					  </div>
+					</div>
+					<!-- Card 3 -->
+					<div class="col">
+					  <div class="card text-bg-light h-100">
+						<div class="card-body d-flex flex-column">
+						  <h5 class="card-title fs-6 font-monospace fw-bold"></h5>
+						  <p class="card-text font-monospace"></p>
+						  <p class="card-text font-monospace"></p>
+						  <div class="mt-auto d-flex justify-content-end"> <i class="bi bi-filetype-js fs-3 me-2"></i> </div>
+						</div>
+					  </div>
+					</div>
+					<!-- Card 4 -->
+					<div class="col">
+					  <div class="card text-bg-light h-100">
+						<div class="card-body d-flex flex-column">
+						  <h5 class="card-title fs-6 font-monospace fw-bold"></h5>
+						  <p class="card-text font-monospace"></p>
+						  <p class="card-text font-monospace"></p>
+						  <div class="mt-auto d-flex justify-content-end"> <i class="bi bi-filetype-js fs-3 me-2"></i> </div>
+						</div>
+					  </div>
+					</div>
+					<!-- Card 5 -->
+					<div class="col">
+					  <div class="card text-bg-light h-100">
+						<div class="card-body d-flex flex-column">
+						  <h5 class="card-title fs-6 font-monospace fw-bold"></h5>
+						  <p class="card-text font-monospace"></p>
+						  <p class="card-text font-monospace"></p>
+						  <div class="mt-auto d-flex justify-content-end"> <i class="bi bi-filetype-py fs-3 me-2"></i> </div>
+						</div>
+					  </div>
+					</div>
+					<!-- Card 6 -->
+					<div class="col">
+					  <div class="card text-bg-light h-100">
+						<div class="card-body d-flex flex-column">
+						  <h5 class="card-title fs-6 font-monospace fw-bold"></h5>
+						  <p class="card-text font-monospace"></p>
+						  <p class="card-text font-monospace"></p>
+						  <div class="mt-auto d-flex justify-content-end"> <i class="bi bi-filetype-py fs-3 me-2"></i> </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+      
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+      <script>
+        let langData = {}; // Aquí guardaremos los datos del JSON
+        				let currentLang = localStorage.getItem('lang') || 'es'; // Idioma por defecto
+        			
+        				// Función para cargar el JSON
+        				async function loadLang() {
+        					const res = await fetch('lang.json'); // Ajusta la ruta si es necesario
+        					langData = await res.json();
+        					applyLang(currentLang);
+        				}
+        			
+        				// Función para aplicar un idioma específico
+        				function applyLang(lang) {
+        					currentLang = lang;
+        					localStorage.setItem('lang', lang);
+        			
+        					// Cambiar textos con data-translate
+        					document.querySelectorAll('[data-translate]').forEach(el => {
+        						const key = el.getAttribute('data-translate');
+        						if (langData[lang][key]) {
+        							el.textContent = langData[lang][key];
+        						}
+        					});
+        			
+        					// Cambiar textos estáticos específicos (como cursos, skills, experiencia, educación)
+        					// Aquí es donde puedes personalizar más según tus necesidades. 
+        					document.querySelector('h3').textContent = langData[lang].name;
+        					document.querySelector('.fuente').textContent = langData[lang].job;
+        					document.querySelector('[data-translate="location"]').textContent = langData[lang].location;
+        			
+        					// Cambiar el texto del botón
+        					document.querySelectorAll('.lang-text').forEach(el => {
+        						el.textContent = lang.toUpperCase();
+        					});
+        			
+        					// Si tienes que actualizar más secciones (skills, courses), puedes hacerlo aquí
+        					updateCourses(lang);
+        				}
+        			
+        				// Función para actualizar los cursos dinámicamente
+						/*
+        				function updateCourses(lang) {
+        					const courses = langData[lang].courses;
+        					const courseCards = document.querySelectorAll('.card');
+        			
+        					courseCards.forEach((card, index) => {
+        						if (courses[index]) {
+        							card.querySelector('.card-title').textContent = courses[index].title;
+        							const pTags = card.querySelectorAll('p');
+        							pTags[0].textContent = courses[index].date;
+        							pTags[1].textContent = courses[index].duration;
+        						}
+        					});
+        				}*/
+
+
+						function updateCourses(lang) {
+  const courses = langData[lang].courses;
+
+  // Actualizar tarjetas en versión de escritorio
+  document.querySelectorAll('.desktop-courses .card').forEach((card, index) => {
+    if (courses[index]) {
+      card.querySelector('.card-title').textContent = courses[index].title;
+      const pTags = card.querySelectorAll('p');
+      pTags[0].textContent = courses[index].date;
+      pTags[1].textContent = courses[index].duration;
+    }
+  });
+
+  // Actualizar tarjetas en versión móvil
+  document.querySelectorAll('.mobile-courses .card').forEach((card, index) => {
+    if (courses[index]) {
+      card.querySelector('.card-title').textContent = courses[index].title;
+      const pTags = card.querySelectorAll('p');
+      pTags[0].textContent = courses[index].date;
+      pTags[1].textContent = courses[index].duration;
+    }
+  });
+}
+        			
+        				// Evento para cambiar el idioma
+        				function toggleLang() {
+        					const langs = ['es', 'en', 'it'];
+        					let nextIndex = (langs.indexOf(currentLang) + 1) % langs.length;
+        					applyLang(langs[nextIndex]);
+        				}
+        			
+        				document.addEventListener('DOMContentLoaded', () => {
+        					loadLang();
+        				});
+        
+      </script>
+  </body>
 </html>
