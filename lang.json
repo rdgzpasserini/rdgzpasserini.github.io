@@ -1,0 +1,90 @@
+{
+  "es": {
+    "name": "Martín Rodríguez Passerini",
+    "job": "Web Developer | Data Analyst",
+    "location": "Mallorca, España.",
+    "about_title": "Acerca de mí",
+    "about_text": "Desarrollador web con experiencia en la creación de aplicaciones dinámicas y escalables. Enfoque proactivo, capacidad de adaptación a nuevas tecnologías y habilidades para el trabajo en equipo. Comprometido con la mejora continua y el desarrollo de soluciones eficientes.",
+    "experience_title": "Experiencia",
+    "air_europa": "Air Europa",
+    "experience_date": "2023 - Actualidad",
+    "loyalty_program": "Analista de Programa de Lealtad",
+    "loyalty_program_desc": "Automatización de emails basados en eventos e integrados al CRM. Creación de dashboards y reportes. Configuración de reglas de negocio para optimizar procesos. Aplicación de metodologías ágiles para la mejora continua de procesos y sistemas digitales.",
+    "education_title": "Educación",
+    "education_degree": "Grado Superior en Desarrollo de Aplicaciones Web",
+    "education_desc": "Diseño de interfaces responsive, desarrollo de aplicaciones dinámicas y escalables, integración de servicios web mediante APIs REST, gestión de bases de datos y control de versiones.",
+    "skills_title": "Habilidades",
+    "skills_list": ["HTML5", "CSS", "Bootstrap", "JavaScript", "JQuery", "PHP", "Java", "MySQL", "OracleDB", "Apache", "Tomcat", "Git", "C#"],
+    "courses_title": "Cursos",
+    "courses": [
+      { "title": "Service Workers", "date": "Dic 2024", "duration": "4 Horas" },
+      { "title": "Manipulación del DOM", "date": "Nov 2024", "duration": "8 Horas" },
+      { "title": "Asíncrona con Promises", "date": "Dic 2024", "duration": "2 Horas" },
+      { "title": "Asincronía, Prototipos y Clases", "date": "Dic 2024", "duration": "8 Horas" },
+      { "title": "Inteligencia Artificial", "date": "Nov 2024", "duration": "7 Horas" },
+      { "title": "ChatGPT con la API de OpenAI", "date": "Nov 2024", "duration": "10 Horas" }
+    ],
+    "contact_title": "Contacto",
+    "projects_title": "Proyectos"
+  },
+  "en": {
+    "name": "Martin Rodriguez Passerini",
+    "job": "Web Developer | Data Analyst",
+    "location": "Mallorca, Spain.",
+    "about_title": "About Me",
+    "about_text": "Web developer with experience in creating dynamic and scalable applications. Proactive approach, adaptability to new technologies, and strong teamwork skills. Committed to continuous improvement and developing efficient solutions.",
+    "experience_title": "Experience",
+    "air_europa": "Air Europa",
+    "experience_date": "2023 - Present",
+    "loyalty_program": "Loyalty Program Analyst",
+    "loyalty_program_desc": "Automation of event-based emails integrated into the CRM. Creation of dashboards and reports. Configuration of business rules to optimize processes. Application of agile methodologies for continuous improvement of processes and digital systems.",
+    "education_title": "Education",
+    "education_degree": "Higher Degree in Web Application Development",
+    "education_desc": "Design of responsive interfaces, development of dynamic and scalable applications, integration of web services through REST APIs, database management, and version control.",
+    "skills_title": "Skills",
+    "skills_list": ["HTML5", "CSS", "Bootstrap", "JavaScript", "JQuery", "PHP", "Java", "MySQL", "OracleDB", "Apache", "Tomcat", "Git", "C#"],
+    "courses_title": "Courses",
+    "courses": [
+      { "title": "Service Workers", "date": "Dec 2024", "duration": "4 Hours" },
+      { "title": "DOM Manipulation", "date": "Nov 2024", "duration": "8 Hours" },
+      { "title": "Asynchronous with Promises", "date": "Dec 2024", "duration": "2 Hours" },
+      { "title": "Asynchrony, Prototypes, and Classes", "date": "Dec 2024", "duration": "8 Hours" },
+      { "title": "Artificial Intelligence", "date": "Nov 2024", "duration": "7 Hours" },
+      { "title": "ChatGPT with OpenAI API", "date": "Nov 2024", "duration": "10 Hours" }
+    ],
+    "contact_title": "Contact",
+    "projects_title": "Projects"
+  },
+  "it": {
+    "name": "Martín Rodríguez Passerini",
+    "job": "Web Developer | Data Analyst",
+    "location": "Maiorca, Spagna.",
+    "about_title": "Su di me",
+    "about_text": "Sviluppatore web con esperienza nella creazione di applicazioni dinamiche e scalabili. Approccio proattivo, capacità di adattarsi a nuove tecnologie e ottime capacità di lavoro in team. Impegnato nel miglioramento continuo e nello sviluppo di soluzioni efficienti.",
+    "experience_title": "Esperienza",
+    "air_europa": "Air Europa",
+    "experience_date": "2023 - Presente",
+    "loyalty_program": "Analista del Programma Fedeltà",
+    "loyalty_program_desc": "Automazione di email basate su eventi integrate nel CRM. Creazione di dashboard e report. Configurazione di regole aziendali per ottimizzare i processi. Applicazione di metodologie agili per il miglioramento continuo dei processi e dei sistemi digitali.",
+    "education_title": "Formazione",
+    "education_accademy": "Ilerna ITC",
+    "education_degree": "Diploma Superiore in Sviluppo di Applicazioni Web",
+    "education_desc": "Progettazione di interfacce responsive, sviluppo di applicazioni dinamiche e scalabili, integrazione di servizi web tramite API REST, gestione di database e controllo delle versioni.",
+    "skills_title": "Competenze",
+    "skills_list": ["HTML5", "CSS", "Bootstrap", "JavaScript", "JQuery", "PHP", "Java", "MySQL", "OracleDB", "Apache", "Tomcat", "Git", "C#"],
+    "courses_title": "Corsi",
+    "courses": [
+      { "title": "Service Workers", "date": "Dic 2024", "duration": "4 Ore" },
+      { "title": "Manipolazione del DOM", "date": "Nov 2024", "duration": "8 Ore" },
+      { "title": "Asincronia con Promises", "date": "Dic 2024", "duration": "2 Ore" },
+      { "title": "Asincronia, Prototipi e Classi", "date": "Dic 2024", "duration": "8 Ore" },
+      { "title": "Intelligenza Artificiale", "date": "Nov 2024", "duration": "7 Ore" },
+      { "title": "ChatGPT con l'API di OpenAI", "date": "Nov 2024", "duration": "10 Ore" }
+    ],
+    "contact_title": "Contatto",
+    "projects_title": "Progetti"
+  }
+}
+
+
+  
